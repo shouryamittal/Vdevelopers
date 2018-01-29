@@ -1,0 +1,915 @@
+/*base background color:#00B8D4*/
+/*Heading color-> #455A64*/
+/*Some cards color: #ECEFF1*/
+
+body,html
+{
+	/*font-family: 'Quicksand', sans-serif;*/font-family: 'Raleway', sans-serif;
+}
+
+
+.navbar-fixed
+{
+	height: 85px;
+}
+
+.nav1
+{
+	height: 85px;
+	padding-top: 10px;
+	background-color: #ef5350;
+	color: red;
+	background: linear-gradient(rgba(216, 27, 96, 0.8),rgba(244, 81, 30, 0.8));
+}
+
+.container1
+{
+	width: 90%;
+}
+
+.brand-logo{
+	color: red;
+	height: 100px;
+}
+
+.side-nav
+{
+	background: linear-gradient(rgba(216, 27, 96, 0.8),rgba(244, 81, 30, 0.8)) ;
+	width: 90%;
+}
+
+.side-nav li a 
+{
+	color: white;
+	font-weight: bolder
+}
+
+.side-nav li a i
+{
+	color: white;
+}
+
+.side-nav img
+{
+	width: 40%;
+	height: 70%;
+	padding-top: 15%;
+	padding-bottom: 15%;
+}
+
+.navbar-fixed
+{
+	z-index: 9999
+}
+
+/*  start of landing page css*/
+.top_div_tint
+{
+	height: 100%;
+	/*background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7));*/
+	/*added*/
+	background: linear-gradient(rgba(216, 27, 96, 0.8),rgba(244, 81, 30, 0.8));
+}
+.typed-cursor
+{
+	display: none !important;
+}
+
+.top_div
+{
+	background: url("../img/back2.jpg") no-repeat;
+	background-size: cover;
+	/*added*/
+	height:100%;
+	margin-top: -85px;
+}
+
+.text_inner
+{
+	margin-top: 7%;
+	/*added*/
+	margin-bottom: 12%;
+}
+
+.our_heading
+{
+	font-size: 60px;
+	color: white;
+	
+}
+
+
+.our_text
+{
+	color: white;
+	font-size: 16px;
+	word-wrap: break-word;
+}
+
+.line1
+{
+	width:170px;
+	border-color:#00B8D4;
+	border-top: 3px solid #00B8D4;	
+}
+
+.text_bottom
+{
+	/*added*/
+	margin-top: -10%;
+}
+
+.who_we_are
+{
+	/*added*/
+	height: 100%;
+	background-color:#ECEFF1;
+	color:black;
+}
+
+.who_we_are_text
+{
+	word-wrap: break-word;
+	padding-left: 14px;
+	padding-right: 14px;
+	/*added*/
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.what_we_do
+{
+	background-color:#00B8D4;
+	color: white;
+	word-wrap: break-word;
+	/*added*/
+	height: 100%;
+}
+
+.what_we_do_text
+{
+	word-wrap: break-word;
+	padding-left: 14px;
+	padding-right: 14px;
+	/*added*/
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.learn_more_btn
+{
+	/*background-color: transparent;
+	border: 2px solid #ef5350;
+	margin-top: 2%;*/
+
+	/*added*/
+	margin-top: 5%;
+	margin-bottom: 70px;
+	background-color: #00B8D4;
+	border:2px solid #00B8D4;
+	color: white;
+	font-weight: bold;
+	border-radius: 5px;
+}
+
+.learn_more_btn:hover
+{
+	background-color:#00B8D4;
+	color: white;
+}
+
+/*  end of landing page css*/
+
+/*  start of steps section css*/
+.section2
+{
+	background-color: #fbfbfb;
+	/*added*/
+	margin-top: -170px;
+}
+
+.section2_part1
+{
+	/*added*/
+	padding-top: 200px;
+}
+
+.section2_part1_h3
+{
+	font-size: 37px;
+	color: #455A64;
+	font-weight: bold;	
+}
+
+.line2
+{
+	width:140px;
+	border-color:#00B8D4;
+	border-top: 3px solid #00B8D4;	
+}
+
+.tagline{
+	padding-bottom: 20px;
+}
+
+.step_card1,.step_card2,.step_card3,.step_card4
+{
+	height: 100%;
+	position: relative;
+}
+
+.imagediv_hidden
+{
+	position: absolute;
+	left:0;
+	right: 0;
+	bottom: 0;
+	background: linear-gradient(rgba(216, 27, 96, 0.8),rgba(244, 81, 30, 0.8));
+	transition: 0.4s ease;
+	overflow: hidden;
+	height: 100%;
+}
+
+.step_card1 .imagediv_hidden
+{	
+	animation-name:loop;
+	animation-duration: 10s;
+	animation-iteration-count:infinite; 
+	animation-timing-function:ease-in-out;
+}
+
+.step_card2 .imagediv_hidden
+{	
+	animation-name:loop2;
+	animation-duration: 10s;
+	animation-iteration-count:infinite; 
+	animation-timing-function:ease-in-out;
+}
+.step_card3 .imagediv_hidden
+{
+	animation-name:loop3;
+	animation-duration: 10s;
+	animation-iteration-count:infinite; 
+	animation-timing-function:ease-in-out;
+}
+.step_card4 .imagediv_hidden
+{	
+	animation-name:loop4;
+	animation-duration: 10s;
+	animation-iteration-count:infinite;
+	animation-timing-function:ease-in-out; 
+}
+
+/*.step_card:hover .imagediv_hidden
+{
+	height: 100%;
+}*/
+
+.step_card:hover .step_content 
+{
+	background-color: #fbfbfb;	
+}
+
+@keyframes loop{
+	0%{		
+		height: 100%;
+		transition: all 0.5s
+	}
+
+	33%{
+		height: 0%;
+		transition: all 0.5s
+	}
+
+	67%
+	{
+		height: 0%;
+		transition: all 0.5s		
+	}
+
+	100%
+	{
+		height: 0%;
+		transition: all 0.5s
+	}
+}
+
+@keyframes loop2{
+	0%
+	{
+		height: 0%;
+		transition: all 0.5s
+	}
+
+	33%
+	{
+		height: 100%;
+		transition: all 0.5s
+	}
+
+	67%
+	{
+		height: 0%;
+		transition: all 0.5s	
+	}
+
+	100%
+	{
+		height: 0%;
+		transition: all 0.5s
+	}
+}
+
+@keyframes loop3{
+	0%
+	{
+		height: 0%;
+		transition: all 0.5s
+	}
+
+	33%
+	{		
+		height: 0%;
+		transition: all 0.5s
+	}
+
+	67%
+	{
+		height: 100%;
+		transition: all 0.5s
+	}
+
+	100%
+	{
+		height: 0%;
+		transition: all 0.5s
+	}
+}
+
+@keyframes loop4{
+	0%
+	{	height: 0%;
+		transition: all 0.5s
+	}
+
+	33%
+	{	
+		height: 0%;
+		transition: all 0.5s
+	}
+
+	67%
+	{
+		height: 0%;
+		transition: all 0.5s
+	}
+
+	100%
+	{	
+		height: 100%;
+		transition: all 0.5s
+	}
+}
+
+.step_no
+{
+	font-size: 20px;
+	font-weight: bold;
+	color: #ef5350;
+}
+
+.step1_heading
+{
+	padding-top: 5%;
+	font-size: 20px;
+	font-weight: bold;
+	color: black;
+}
+
+.step1_explain
+{
+	padding-top: 5%;
+	font-size: 14px;
+	color: #90a4ae;
+}
+
+.step-card-image img
+{
+	height: 150px;
+	width: 150px !important;
+	margin:0 auto;
+	padding-top: 30px;
+	padding-bottom: 10px;	
+}
+
+.hideen_text
+{
+	font-size: 25px;
+	color: white;
+	font-weight: bolder;
+	margin-left: 85px;
+}
+
+/*  end of steps section css*/
+
+/*  start services section css*/
+.our_service
+{
+	/*background: url("../img/back2.jpg") no-repeat;
+	background-size: cover;*/
+	background-color: #fbfbfb;
+	margin-bottom: -20px;
+	padding-bottom: 50px;	
+}
+
+.our_service h4
+{
+	padding-top: 4%;
+	font-size: 37px;
+	color: #455A64;
+	font-weight: bold;
+}
+
+.line3
+{
+	width:50px;
+	border-color:#00B8D4;
+	border-top: 3px solid #00B8D4;	
+}
+
+.services
+{
+	padding-bottom: 4%;
+}
+	
+.myCard
+{
+	margin-top: 7%;
+	margin-bottom: 7%;
+	height: 100%;
+	padding-bottom: 50px;
+	background-color: #ECEFF1;
+	border: none;
+	-webkit-transition: all 200ms ease-in;
+	-webkit-transform: scale(1);
+	-ms-transition: all 200ms ease-in;
+	-ms-transform: scale(1);
+	-moz-transition: all 200ms ease-in;
+	-moz-transform: scale(1);
+	transition: all 200ms ease-in;
+    transform: scale(1);   
+}
+
+.myCard:hover
+{
+	box-shadow: 0px 1px 14px 1px #e0e0e0;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.1);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.1);   
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.1);
+    transition: all 200ms ease-in;
+    transform: scale(1.1);
+}
+
+.myCard h5
+{
+	color: #90a4ae;
+	font-size: 22px;
+}
+
+.myCard p
+{
+	padding-bottom: 2%;
+	padding-left: 8%;
+	padding-right: 8%;
+	word-wrap: break-word;
+	font-size: 13px;
+}
+
+.myCard img
+{
+	padding-top: 30px;
+}
+
+.service1
+{
+	padding-top: 12%;
+	height: 50%;
+	width: 40%;
+}
+
+.knowmore_btn
+{
+	background-color:#00B8D4;
+	border-radius: 5px;
+}
+
+.knowmore_btn:hover
+{
+	background-color: #00B8D4;
+}
+
+/*  end of services section css*/
+
+/*  start of contact us css*/
+.contact
+{
+	margin-top: 3%;
+	margin-bottom: 3%;
+}
+
+.contact_no
+{
+	color: #455A64;
+	font-size: 23px;
+}
+
+.email_id
+{
+	color: #455A64;
+	font-size: 21px;	
+}
+
+.register_btn
+{
+	background-color: #00B8D4;
+	color: white;
+	margin-top: 4%;
+	border-radius: 5px;
+}
+
+.register_btn:hover
+{
+	background-color:#00B8D4;
+	
+}
+
+/*  end of contact us css*/
+
+/*  start of pricing section css*/
+.cost
+{
+	background-color: #fbfbfb;
+}
+
+.cost h4
+{
+	padding-top: 4%;
+	font-size: 37px;
+	color: #455A64;
+	font-weight: bold;
+}
+
+.line4
+{
+	width:40px;
+	border-color:#00B8D4;
+	border-top: 3px solid #00B8D4;	
+}
+
+.container2
+{
+	width: 80%;
+	padding-bottom: 4%;
+}
+
+.container2 .row
+{
+	margin-top: 4%;
+}
+
+.cost1_card
+{
+	box-shadow: none;
+	border: none;
+}
+
+.card_content
+{
+	padding-top: 8%;
+	padding-bottom: 8%;
+}
+
+.cost1
+{
+	color: #00B8D4;
+	font-size: 24px;
+}
+
+.card_content h5
+{
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.feature1
+{
+	color: #455A64;
+	font-size: 15px;
+}
+
+.card_content a
+{
+	font-size: 15px;
+	font-weight: bold;
+	color: black;
+}
+
+.card_content a:hover
+{
+	color: #ef5350;
+}
+
+.cost2_card
+{
+	box-shadow: none;
+	border: none;
+}
+
+.cost3_card
+{
+	box-shadow: none;
+	border: none;
+	background-color: #00B8D4;
+}
+
+.cost3
+{
+	color: white;
+	font-size: 24px;
+}
+
+.cost3_card h5
+{
+	color: white
+}
+
+.feature3
+{
+	color: #455A64;
+	font-size: 15px;
+}
+
+.cost3_card a
+{
+	color: white
+}
+
+.cost3_card a:hover
+{
+	color: white
+}
+
+/*  end of pricing section css*/
+
+/*  start of footer css*/
+
+.page-footer
+{
+	margin-top: -20px;
+	height: 100px;
+	background-color:#ECEFF1;
+}
+
+.list-inline li
+{
+	display: inline;
+	font-size: 18px;
+	padding-right: 1%;
+}
+
+.list-inline li a
+{
+	color: white
+}
+
+/*  end of footer css*/
+
+
+.works
+{
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
+
+.our_work
+{
+	padding-bottom: 50px;
+}
+
+.our_work_title
+{
+	padding-top: 4%;
+	font-size: 37px;
+	color: #455A64;
+	font-weight: bold;
+}	
+
+.line5
+{
+	width:55px;
+	border-color:#00B8D4;
+	border-top: 3px solid #00B8D4;		
+}
+
+.workcard
+{
+	position: relative;
+	box-shadow: none;
+	box-shadow: 0px 18px 13px -11px #b0bec5;
+}
+
+.overlay
+{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: linear-gradient(rgba(216, 27, 96, 0.8),rgba(244, 81, 30, 0.8));
+	overflow: hidden;
+	height: 0%;
+	transition: 0.5s ease;
+}
+
+.workcard:hover .overlay
+{
+	height: 100%;
+}
+
+.workcard:hover .worktitle
+{
+	display: none
+}
+
+.textp
+{ 
+  color: white;
+  font-size: 15px;
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  right: 0%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-100%, -100%);
+}
+
+.work_img
+{
+	height: 300px;
+	width: 800px;
+	overflow: hidden;
+
+}
+
+.view_btn
+{
+	background-color: #00B8D4;
+	position: absolute;
+	top: 75%;
+	left: 10%;
+}
+
+.view_btn:hover
+{
+	background-color: #00B8D4;
+}
+
+/* start of our_work css*/
+
+.our_client
+{
+	background-color: #494949  ;
+	padding-bottom: 10px;
+	padding-top: 30px;
+}
+
+.clients_tag
+{
+	font-size: 1.3rem;
+	color:#bdbdbd;
+	font-weight: bold;
+	padding-top: 30px;
+	padding-bottom: 20px;
+	text-align: center;
+}
+
+.clientLogo img
+{
+	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    width:120px;
+    height: 100%;
+    padding-top: 30px;
+}
+
+.img
+{
+	margin-top: 25px;
+}
+
+.myContainer
+{
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+.page-footer
+{
+	background: #00B8D4;
+}
+
+.web-design
+{
+	background:url('../img/webdesign.jpeg') fixed no-repeat;
+	background-size: cover;
+}
+/* end of our_work css*/
+
+/* start of webdesign_top css*/
+.webdesign_top
+{
+	background: linear-gradient(rgba(216, 27, 96, 0.7),rgba(244, 81, 30, 0.7));
+	height: 300px;
+}
+
+.webdesign_subtop
+{
+	background-color: rgba(216, 27, 96, 0.1);
+}
+
+.webdesign_subtop a
+{
+	color: white;
+	margin-left: 5%;
+	font-size: 16px;
+}
+.webdesign_bottom
+{
+	background-image: url('../img/');
+}
+.webdesign_top p
+{
+	color: white;
+	font-weight: bolder;
+	font-size: 50px;
+	padding-top: 20px;
+}
+
+.home_btn:hover
+{
+	background-color: transparent;
+}
+
+.webdesign_middletop
+{
+	background-color: white
+}
+
+.webdesign_middletop a
+{
+	color: #e91e63;
+	margin-left: 2%;
+	font-size: 16px;
+	padding-left: 1%;
+	padding-right: 1%;
+	font-weight: bolder;
+}
+
+.btn_register:hover
+{
+	background-color: #fce4ec;
+}
+
+.webdesign_bottom
+{
+	background-color: #f8f9fa
+	margin-top:-30px;
+}
+
+.info
+{
+	padding-top: 3%;
+}
+
+.webdesign_bottom_text 
+{
+	background-color: white;
+	color: grey;	
+}
+
+.webdesign_bottom_heading
+{
+	font-size: 35px;
+	padding-left: 2%;
+	padding-top: 1%;
+	color: #e91e63;
+}
+
+.webdesign_bottom_text p
+{
+	padding-left: 2%;
+	padding-right: 2%;
+	padding-bottom: 1%;
+}
